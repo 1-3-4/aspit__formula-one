@@ -1,0 +1,34 @@
+{
+  "name": "formula-one",
+  "version": "1.0.0",
+  "description": "Gulpfile for the development of a formula one website, schoolwork.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "134",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1-3-4/aspit__formula-one.git"
+  },
+  "keywords": [
+    "html5",
+    "scss",
+    "css",
+    "gulp"
+  ],
+  "bugs": {
+    "url": "https://github.com/1-3-4/aspit__formula-one/issues"
+  },
+  "homepage": "https://github.com/1-3-4/aspit__formula-one#readme",
+  "dependencies": {
+    "npm": "^6.0.0"
+  }
+}
