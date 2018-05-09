@@ -1,68 +1,50 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-//var uglifycss = require('gulp-uglifycss');
+var uglycss = require('gulp-uglifycss');
 var rename = require('gulp-rename');
-var livereload = require('gulp-livereload');
 
-// Path to localhost on AspIT computer:
-// var localhost = 'C:/apps/xampp/htdocs/';
-var localhost = "";
-
+var localhost = 'C:/apps/xampp/htdocs/';
 var paths = {
 	src: 'src/**/*',
-	srcHTML: 'src/**/*.html',
 	srcPHP: 'src/**/*.php',
-	srcSCSS: 'src/scss/*.scss',
-	srcJS: 'src/**/*.js',
-	scrIMG: 'src/img/*',
-
+	srcSCSS: 'src/resources/scss/*',
+	scrIMG: 'src/resources/images/*',
+	
 	tmp: localhost + 'tmp',
-	tmpHTML: localhost + 'tmp/**/*.html',
 	tmpPHP: localhost + 'tmp/*.php',
-	tmpCSS: localhost + 'tmp/css/',
-	tmpJS: localhost + 'tmp/',
-	tmpIMG: localhost + 'tmp/img/'
+	tmpCSS: localhost + 'tmp/resources/css/',
+	tmpIMG: localhost + 'tmp/resources/images/'
 };
 
 gulp.task('default', ['watch']);
 
-gulp.task('html', function () {
-	return gulp.src(paths.srcHTML)
-		.pipe(gulp.dest(paths.tmp))
-		.pipe(livereload());
-});
-
 gulp.task('php', function () {
 	return gulp.src(paths.srcPHP)
-		.pipe(gulp.dest(paths.tmp))
-		.pipe(livereload());
+		.pipe(gulp.dest(paths.tmp));
 });
 
 gulp.task('img', function () {
 	return gulp.src(paths.scrIMG)
-		.pipe(gulp.dest(paths.tmpIMG))
-		.pipe(livereload());
+		.pipe(gulp.dest(paths.tmpIMG));
 });
 
-gulp.task('css', function () {
+gulp.task('sass-and-rename', function () {
 	return gulp.src(paths.srcSCSS)
 		.pipe(sass())
-		// .pipe(rename({suffix: ".min"}))
-		.pipe(gulp.dest(paths.tmpCSS))
-		.pipe(livereload());
+		.pipe(rename({suffix: ".min"}))
+		.pipe(gulp.dest(paths.tmpCSS));
 });
 
-gulp.task('js', function () {
-	return gulp.src(paths.srcJS)
-		.pipe(gulp.dest(paths.tmpJS))
-		.pipe(livereload());
+gulp.task('uglifycss', function () {
+	return gulp.src(paths.srcSCSS)
+		.pipe(sass().on('error', sass.logError))
+		.pipe(uglycss())
+		.pipe(rename({ suffix: ".min" }))
+		.pipe(gulp.dest(paths.tmpCSS));
 });
 
-gulp.task('watch', ['html', 'php', 'css', 'js', 'img'], function () {
-	livereload.listen();
-	gulp.watch(paths.srcHTML, ['html']);
-	gulp.watch(paths.srcPHP, ['php']);
-	gulp.watch(paths.srcSCSS, ['css']);
-	gulp.watch(paths.srcJS, ['js']);
-	gulp.watch(paths.srcIMG, ['img']);
+gulp.task('copy', ['php', 'img', 'sass-and-rename']);
+
+gulp.task('watch', function () {
+	gulp.watch(paths.src, ['copy']);
 });
