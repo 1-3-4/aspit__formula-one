@@ -5,8 +5,8 @@ var rename = require('gulp-rename');
 var livereload = require('gulp-livereload');
 
 // Path to localhost on AspIT computer:
-// var localhost = 'C:/apps/xampp/htdocs/';
-var localhost = "";
+var localhost = 'C:/apps/xampp/htdocs/';
+// var localhost = "";
 
 var paths = {
 	src: 'src/**/*',
@@ -47,7 +47,6 @@ gulp.task('img', function () {
 gulp.task('css', function () {
 	return gulp.src(paths.srcSCSS)
 		.pipe(sass())
-		// .pipe(rename({suffix: ".min"}))
 		.pipe(gulp.dest(paths.tmpCSS))
 		.pipe(livereload());
 });

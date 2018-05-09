@@ -1,0 +1,31 @@
+header {
+    @extend %reset;
+    height: 530px;
+    h1#header__heading {
+        @extend %reset-heading;
+        text-align: center;
+        font-size: 77pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $clr--header__heading;
+    }
+    h2#header__subheading {
+        @extend %reset-heading;
+        text-align: center;
+        font-size: 38pt;
+        font-weight: semibold, bold;
+        text-transform: uppercase;
+        color: $clr--header__subheading;
+        &::before, &::after {
+            @extend %reset;
+            content: url(../img/dots.png);
+            // display: inline-block;
+        }
+    }
+    div {
+        @extend %reset;
+        height: 30px;
+        background-image: url(../img/border__stribes.png);
+        background-repeat: repeat-x;
+    }
+}

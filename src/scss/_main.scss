@@ -1,0 +1,10 @@
+main {
+    @extend %reset;
+    background-color: $clr-main-bg;
+    section {
+        @extend %reset;
+        h3 {
+            @extend %reset-heading;
+        }
+    }
+}
