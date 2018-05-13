@@ -1,0 +1,6 @@
+.list-item__link_is-invisible {
+    @extend %summary-link__grid;
+    padding: $summary__link_spacing;
+    text-decoration: none;
+    color: inherit;
+}

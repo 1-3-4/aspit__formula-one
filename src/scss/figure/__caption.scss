@@ -1,0 +1,9 @@
+.figure__caption {
+    @extend %reset__text;
+    // margin-top: $figure_size_spacing;
+    text-align: center;
+    font-size: $figure__caption_size_text;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $figure__caption_clr;
+}

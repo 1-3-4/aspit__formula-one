@@ -1,0 +1,15 @@
+.main__grid {
+    @extend %reset;
+    display: grid;
+    max-width: $main__grid_size_max-width;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: stretch;
+    align-items: start;
+    justify-content: center;
+    align-content: start;
+    grid-auto-flow: row;
+}

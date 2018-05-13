@@ -1,0 +1,8 @@
+%summary-link__grid {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "image heading"
+                         "image subheading";
+    grid-column-gap: $summary__link_spacing;
+}

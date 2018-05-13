@@ -1,4 +1,4 @@
-# Ignore the 'tmp' directory:
+# Ignore the 'tmp' directory (if it has accidentally been placed in the directory):
 /tmp
 # Ignore the 'node_modules' directory:
 /node_modules

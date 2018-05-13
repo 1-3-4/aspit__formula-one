@@ -6,9 +6,9 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav>
-        <ul>
+        <ul class="list_invisible">
           <li><a href="#"><img src="./img/logo-round.png"></a></li>
           <li><a href="#">Home</a></li>
           <li><a href="#">Drivers</a></li>
@@ -19,103 +19,115 @@
       <h1 id="header__heading">2015 Drivers Championship</h1>
       <h2 id="header__subheading">Silverstone fri 03 - sun 05 jul</h2>
       <div class="header__border-bottom"></div>
-    </header>
-    <main>
-        <section>
-            <h3>Top drivers</h3>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Lewis Hamilton profile photo.">
-                        <span>Lewis Hamilton</span>
-                        <span>Mercedes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Nico Rosberg profile photo.">
-                        <span>Nico Rosberg</span>
-                        <span>Mercedes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Sebastian Vettel profile photo.">
-                        <span>Sebastian Vettel</span>
-                        <span>Ferrari</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Kimi Räikkönen profile photo.">
-                        <span>Kimi Räikkönen</span>
-                        <span>Ferrari</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h3>top teams</h3>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Mercedes Benz team logo.">
-                        <span>Mercedes</span>
-                        <span>Germany</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Ferrari team logo.">
-                        <span>Ferrari</span>
-                        <span>Italy</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Williams team logo.">
-                        <span>Williams</span>
-                        <span>Great britain</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Red Bull team logo.">
-                        <span>Red Bull</span>
-                        <span>Switzerland</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h3>Upcoming track</h3>
-            <img src="../img/track--silverstone.png" alt="Depiction of the silverstone track, colored in great britain's flag.">
-            <h4>Silverstone - Great britain</h4>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Number of times held:</td>
-                        <td>69</td>
-                    </tr>
-                    <tr>
-                        <td>First held:</td>
-                        <td>1926</td>
-                    </tr>
-                    <tr>
-                        <td>Circuit length:</td>
-                        <td>5891 km</td>
-                    </tr>
-                    <tr>
-                        <td>Race length:</td>
-                        <td>306291 km</td>
-                    </tr>
-                    <tr>
-                        <td>Laps:</td>
-                        <td>52</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    </header> -->
+    <main class="main">
+        <div class="main__grid">
+            <section class="summary">
+                <h3 class="summary__heading">Summary heading</h3>
+                <ul class="summary__list_is-invisible">
+                    <li class="list-item_is-invisible
+                               list-item__border_clr_team-mercedes">
+                        <a class="list-item__link_is-invisible" href="#">
+                            <img class="list-item__image" src="img/thumb-lewis-hamilton-mercedes.jpg" alt="Lewis Hamilton profile photo.">
+                            <h4 class="list-item__heading">1. Lewis Hamilton</h4>
+                            <h5 class="list-item__subheading">Mercedes</h5>
+                        </a>
+                    </li>
+                    <li class="list-item_is-invisible
+                               list-item__border_clr_team-mercedes">
+                        <a class="list-item__link_is-invisible" href="#">
+                            <img class="list-item__image" src="img/thumb-nico-rosberg-mercedes.jpg" alt="Nico Rosberg profile photo.">
+                            <h4 class="list-item__heading">2. Nico Rosberg</h4>
+                            <h5 class="list-item__subheading">Mercedes</h5>
+                        </a>
+                    </li>
+                    <li class="list-item_is-invisible
+                               list-item__border_clr_team-ferrari">
+                        <a class="list-item__link_is-invisible" href="#">
+                            <img class="list-item__image" src="img/thumb-sebastian-vettel-ferrari.jpg" alt="Sebastian Vettel profile photo.">
+                            <h4 class="list-item__heading">3. Sebastian Vettel</h4>
+                            <h5 class="list-item__subheading">Ferrari</h5>
+                        </a>
+                    </li>
+                    <li class="list-item_is-invisible
+                               list-item__border_clr_team-ferrari">
+                        <a class="list-item__link_is-invisible" href="#">
+                            <img class="list-item__image" src="img/thumb-kimi-raikkonen-ferrari.jpg" alt="Kimi Raïkkönen profile photo.">
+                            <h4 class="list-item__heading">4. Kimi Räikkönen</h4>
+                            <h5 class="list-item__subheading">Ferrari</h5>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="summary">
+                <h3 class="summary__heading">top teams</h3>
+                <ul class="summary__list_is-invisible">
+                    <li class="list-item_is-invisible
+                               list-item__border_clr_team-mercedes">
+                        <a class="list-item__link_is-invisible" href="#">
+                            <img class="list-item__image" src="img/logo__team-mercedes_germany.jpg" alt="Mercedes Benz team logo.">
+                            <h3 class="list-item__heading">Mercedes</h3>
+                            <h4 class="list-item__subheading">Germany</h4>
+                        </a>
+                    </li>
+                    <li class="list-item_is-invisible
+                               list-item__border_clr_team-ferrari">
+                        <a class="list-item__link_is-invisible" href="#">
+                            <img class="list-item__image" src="img/logo__team-ferrari_italy.jpg" alt="Ferrari team logo.">
+                            <h3 class="list-item__heading">Ferrari</h3>
+                            <h4 class="list-item__subheading">Italy</h4>
+                        </a>
+                    </li>
+                    <li class="list-item_is-invisible
+                               list-item__border_clr_team-williams">
+                        <a class="list-item__link_is-invisible" href="#">
+                            <img class="list-item__image" src="img/logo__team-williams_great-britain.jpg" alt="Williams team logo.">
+                            <h3 class="list-item__heading">Williams</h3>
+                            <h4 class="list-item__subheading">Great britain</h4>
+                        </a>
+                    </li>
+                    <li class="list-item_is-invisible
+                               list-item__border_clr_team-red-bull">
+                        <a class="list-item__link_is-invisible" href="#">
+                            <img class="list-item__image" src="img/logo__team-red-bull_switzerland.jpg" alt="Red Bull team logo.">
+                            <h3 class="list-item__heading">Red Bull</h3>
+                            <h4 class="list-item__subheading">Switzerland</h4>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="summary">
+                <h3 class="summary__heading">Upcoming track</h3>
+                <figure class="summary__figure">
+                    <img class="figure__image" src="img/track__silverstone_britain.png" alt="Depiction of the silverstone track, colored in great britain's flag.">
+                    <figcaption class="figure__caption">Silverstone - Great britain</figcaption>
+                </figure>
+                <table class="summary__table">
+                    <tbody>
+                        <tr>
+                            <td>Number of times held:</td>
+                            <td>69</td>
+                        </tr>
+                        <tr>
+                            <td>First held:</td>
+                            <td>1926</td>
+                        </tr>
+                        <tr>
+                            <td>Circuit length:</td>
+                            <td>5891 km</td>
+                        </tr>
+                        <tr>
+                            <td>Race length:</td>
+                            <td>306291 km</td>
+                        </tr>
+                        <tr>
+                            <td>Laps:</td>
+                            <td>52</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
   </body>
 </html>

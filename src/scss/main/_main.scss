@@ -1,0 +1,11 @@
+.main {
+    @extend %reset;
+    // @extend %main_layout_grid;
+    background-color: rgba(0, 0, 0, 0.6);
+    // @include min-screen-size($medium) {
+    //     // justify-content: flex-start;
+    // };
+    // @include min-screen-size($large) {
+    //     justify-content: center;
+    // };
+}

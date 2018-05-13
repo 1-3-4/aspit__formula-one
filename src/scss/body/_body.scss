@@ -1,0 +1,23 @@
+body {
+    @extend %reset;
+    font-family: $font-stack;
+    &::before {
+        @extend %reset;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-image: url(../img/site-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        -web-kit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -ms-filter: blur(4px);
+        -o-filter: blur(4px);
+        filter: blur(4px);
+    }
+}

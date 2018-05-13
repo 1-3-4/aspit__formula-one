@@ -1,0 +1,9 @@
+.list-item__heading {
+    @extend %reset__heading;
+    grid-area: heading;
+    align-self: flex-end;
+    font-family: $font-stack;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $list-item__heading_clr;
+}

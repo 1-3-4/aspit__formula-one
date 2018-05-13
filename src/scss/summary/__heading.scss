@@ -1,0 +1,27 @@
+.summary__heading {
+    @extend %reset__heading;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    line-height: 1;
+    font-size: 29px;
+    font-weight: bold;
+
+    font-family: $font-stack;
+    text-transform: uppercase;
+    color: $summary__heading_clr_txt;
+
+    &::before {
+        content: "";
+        margin-right: 4px;
+        height: 29px;
+        width: 62px;
+        background-image: url(../img/stripes.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}

@@ -5,14 +5,15 @@ var rename = require('gulp-rename');
 var livereload = require('gulp-livereload');
 
 // Path to localhost on AspIT computer:
-var localhost = 'C:/apps/xampp/htdocs/';
-// var localhost = "";
+// var localhost = 'C:/apps/xampp/htdocs/';
+// Path to localhost on private computer:
+var localhost = 'C:/apps/wamp64/www/';
 
 var paths = {
 	src: 'src/**/*',
 	srcHTML: 'src/**/*.html',
 	srcPHP: 'src/**/*.php',
-	srcSCSS: 'src/scss/*.scss',
+	srcSCSS: 'src/scss/**/*.scss',
 	srcJS: 'src/**/*.js',
 	scrIMG: 'src/img/*',
 

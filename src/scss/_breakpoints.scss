@@ -1,0 +1,9 @@
+// Breakpoints are based on UWP breakpoints
+// https://docs.microsoft.com/en-us/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+// Breakpoints are mobile first. It is the reason there is no $small.
+$medium: 641px;
+$large: 1008px;
+
+@mixin min-screen-size($size) {
+    @media (min-width: $size) { @content; }
+}

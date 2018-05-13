@@ -1,0 +1,52 @@
+WIP bem
+
+src/
+    blocks/
+        link/
+            _invisible/
+        list/
+            __item/
+                _invisible
+            _invisible/
+            _visible/
+        summary/
+            __heading/
+            __subheading/
+            __list/
+                __item/
+                    __link/
+                    __image/
+                    __heading/
+                    __subheading/
+            __image/
+            __table
+THEORETICAL
+
+src/
+    img/
+    blocks/
+        html/
+        body/
+        header/
+            __h1/
+            __h2/
+            __div/
+        nav/
+            __ul/
+            __li/
+            __a/
+            _theme/
+        main/
+            __section/
+            __h3/
+            __ul/
+            __li/
+            __a/
+            __img/
+            __span/
+            __span/
+        table/
+            __tbody/
+            __tr/
+            __td/
+        footer/

@@ -1,0 +1,9 @@
+.list-item__subheading {
+    @extend %reset__heading;
+    grid-area: subheading;
+    align-self: flex-start;
+    font-family: $font-stack;
+    font-size: 20px;
+    font-weight: normal;
+    color: $list-item__subheading_clr;
+}

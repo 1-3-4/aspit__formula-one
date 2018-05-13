@@ -1,0 +1,38 @@
+header
+    menu
+        logo
+        nav
+        login
+    heading
+    subheading
+    border
+main
+    summary
+        heading
+        list
+            item
+            link
+            image
+            heading
+            subheading
+            border
+        image
+        caption
+        table
+            tbody
+            tr
+            td
+
+---
+
+b:summary
+    e:summary__heading
+    e:summary__list
+        e:list-item
+            b:list-item__link
+                e:list-item__image
+                e:list-item__heading
+                e:list-item__subheading
+    e:summary__image
+    e:summary__subheading
+    e:summary__table
