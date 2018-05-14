@@ -1,0 +1,9 @@
+.table__cell {
+    @extend %reset__table-cell;
+    &:nth-child(odd) {
+        text-align: left;
+    }
+    &:nth-child(even) {
+        text-align: right;
+    }
+}

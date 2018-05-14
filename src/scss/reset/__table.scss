@@ -1,0 +1,25 @@
+%reset__table_general {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 0;
+    font-family: inherit;
+    // OBS!!! REMOVE WHEN READY TO DEPLOY111
+    border: 1px dashed fuchsia;
+}
+%reset__table {
+    display: table;
+    @extend %reset__table_general;
+}
+%reset__table-row {
+    display: table-row;
+    @extend %reset__table_general;
+}
+%reset__table-cell {
+    display: table-cell;
+    @extend %reset__table_general;
+    vertical-align: middle;
+}

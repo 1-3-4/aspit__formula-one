@@ -3,6 +3,7 @@
     grid-column-start: 1;
     grid-column-end: 7;
     justify-self: stretch;
+    align-self: flex-start;
     @include min-screen-size($medium) {
         &:nth-child(odd) {
             grid-column-start: 1;

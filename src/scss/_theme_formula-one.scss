@@ -6,7 +6,7 @@ $header__heading_clr: white;
 $header__subheading_clr: black;
 $figure__image_clr_bg: #333333;
 $list__subheading_clr: #767676;
-$list__item_clr: rgba(0, 0, 0, 0.6);
+$list__item_clr: #000000;
 $list__item-border_clr_is_invisible: rgba(0, 0, 0, 0);
 $list__item-border_clr_team-mercedes: #2ab4a5;
 $list__item-border_clr_team-ferrari: #c30000;
@@ -23,14 +23,21 @@ $main__grid_size_max-width: 1080px;
 $summary_size_width: 340px;
 $summary__heading_clr_txt: white;
 $summary__link_spacing: 16px;
-$summary__figure_clr_bg: rgba(0, 0, 0, 0.6);
-$summary__table_clr_bg: rgba(0, 0, 0, 0.6);
-$summary__table_clr_text: #333333;
-$summary__table_size_text: 17px;
+$summary__figure_clr_bg: #000000;
+$summary__table_clr_bg: #000000;
+// $summary__table_size_text: 17px;
 
 // FIGURE
 $figure_size_spacing: 21px;
-$figure__caption_clr: white;
+$figure__caption_clr_text: white;
 $figure__caption_size_text: 22px;
 
+// INFO
+$info_clr_bg: #000000;
+// $info__table_clr_text: #999999;
+$info_size_padding: 21px;
+
 // TABLE
+// $table_size_margin: 16px;
+$table_clr_text: #999999;
+$table_size_text: 17px;

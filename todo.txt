@@ -1,0 +1,6 @@
+x Fiks .figure__image, så det ikke bliver 'stretchet'.
+* Style .summary__table.
+* Omdøb variabel navne, så de passer til klasse navne.
+* Omdøb filer, så de følger BEM.
+* Find ud af om der er muligt at style således, at store tal automatisk bliver gjort læsevenlige ved indsættelse af punktumer. Hvis ja, implementer i table.
+* Fiks problemmet med responsive design (mobile).

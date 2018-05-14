@@ -1,0 +1,5 @@
+.info {
+    @extend %reset;
+    padding: $info_size_padding;
+    background-color: $info_clr_bg;
+}
