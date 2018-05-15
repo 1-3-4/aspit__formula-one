@@ -2,3 +2,5 @@
 /tmp
 # Ignore the 'node_modules' directory:
 /node_modules
+# Ignore personal feddback
+feedback.txt

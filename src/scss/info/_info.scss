@@ -1,5 +1,6 @@
 .info {
     @extend %reset;
+    margin: $info_size_margin 0;
     padding: $info_size_padding;
     background-color: $info_clr_bg;
 }
