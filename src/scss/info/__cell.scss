@@ -1,4 +1,4 @@
-.table__cell {
+.info__cell {
     @extend %reset__table-cell;
     &:nth-child(odd) {
         text-align: left;

@@ -1,7 +1,0 @@
-.figure__image {
-    @extend %reset;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 $figure_size_spacing / 2;
-    background-color: $figure__image_clr_bg;
-}

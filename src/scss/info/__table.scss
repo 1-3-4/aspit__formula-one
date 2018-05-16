@@ -1,9 +1,7 @@
 .info__table {
     @extend %reset__table;
     width: 100%;
-    // margin: 0 auto;
-    font-size: $table_size_text;
+    font-size: $info__table_size_text;
     text-transform: uppercase;
-    color: $table_clr_text;
-    // background-color: $summary__table_clr_bg;
+    color: $info__table_clr_text;
 }

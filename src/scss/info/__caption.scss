@@ -1,0 +1,9 @@
+.info__caption {
+    @extend %reset__text;
+    margin-top: $info__caption_size_margin;
+    text-align: center;
+    font-size: $info__caption_size_text;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $info__caption_clr_text;
+}

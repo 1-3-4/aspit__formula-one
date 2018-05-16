@@ -21,8 +21,6 @@
 @import "./summary/__heading";
 @import "./summary/__list_is-invisible";
 @import "./summary/__link_layout_grid";
-@import "./figure/__image";
-@import "./figure/__caption";
 @import "./list-item/list-item";
 @import "./list-item/__link";
 @import "./list-item/__image";
@@ -30,7 +28,8 @@
 @import "./list-item/__subheading";
 @import "./list-item/__border";
 @import "./info/info";
-@import "./info/__figure";
+@import "./info/__image";
+@import "./info/__caption";
 @import "./info/__table";
-@import "./table/__row";
-@import "./table/__cell";
+@import "./info/__row";
+@import "./info/__cell";

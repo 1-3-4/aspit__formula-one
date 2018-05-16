@@ -1,44 +1,61 @@
-// TYPOGRAPHY
+// ---------
+// VARIABLES
+// ---------
+
+// Typography
 $font-stack: calibri, helvetica, arial, sans-serif;
+$font__caption_size: 22px;
+$font__table_size: 17px;
 
-// COLORS
-$header__heading_clr: white;
-$header__subheading_clr: black;
-$figure__image_clr_bg: #333333;
-$list__subheading_clr: #767676;
-$list__item_clr: #000000;
-$list__item-border_clr_is_invisible: rgba(0, 0, 0, 0);
-$list__item-border_clr_team-mercedes: #2ab4a5;
-$list__item-border_clr_team-ferrari: #c30000;
-$list__item-border_clr_team-williams: #ffffff;
-$list__item-border_clr_team-red-bull: #4f1aab;
-$list-item__image-alt_clr: #ffffff;
-$list-item__heading_clr: #ffffff;
-$list-item__subheading_clr: #939393;
+// Colors
+$clr__black: #000000;
+$clr__white: #ffffff;
+$clr__blue: #2ab4a5;
+$clr__red: #c30000;
+$clr__indigo: #4f1aab;
+$clr__grey: #767676;
+$clr__grey_pale: #999999;
+$clr__grey_light: #939393;
+$clr__grey_dark: #333333;
 
-// GRID
-$main__grid_size_max-width: 1080px;
+// Layout
+$content_size_max-width: 1080px;
+$summary_size_spacing: 21px;
+$link__size_col-gap: 16px;
+$size_spacing-min: 8px;
 
-// SUMMARY
-$summary_size_width: 340px;
-$summary__heading_clr_txt: white;
-$summary__link_spacing: 16px;
-$summary__figure_clr_bg: #000000;
-$summary__table_clr_bg: #000000;
-// $summary__table_size_text: 17px;
+// ------
+// DESIGN
+// ------
 
-// FIGURE
-$figure_size_spacing: 21px;
-$figure__caption_clr_text: white;
-$figure__caption_size_text: 22px;
+// Grid
+$main__grid_size_max-width: $content_size_max-width;
 
-// INFO
-$info_clr_bg: #000000;
-// $info__table_clr_text: #999999;
-$info_size_margin: 8px;
-$info_size_padding: 21px;
+// Summary
+$summary__link_spacing: $link__size_col-gap;
+$summary__heading_clr_txt: $clr__white;
 
-// TABLE
-// $table_size_margin: 16px;
-$table_clr_text: #999999;
-$table_size_text: 17px;
+// Summary list
+$list-item__heading_clr: $clr__white;
+$list-item__subheading_clr: $clr__grey_light;
+$list-item__image-alt_clr: $clr__white;
+$list-item__border_clr_team-mercedes: $clr__blue;
+$list-item__border_clr_team-ferrari: $clr__red;
+$list-item__border_clr_team-williams: $clr__white;
+$list-item__border_clr_team-red-bull: clr__indigo;
+$list-item_clr_bg: $clr__black;
+
+// Info
+$info_size_margin: $size_spacing-min;
+$info_size_padding: $summary_size_spacing;
+$info_clr_bg: $clr__black;
+
+$info__image_size_padding: $summary_size_spacing / 2;
+$info__image_clr_bg: $clr__grey_dark;
+
+$info__caption_size_margin: $summary_size_spacing;
+$info__caption_size_text: $font__caption_size;
+$info__caption_clr_text: $clr__white;
+
+$info__table_size_text: $font__table_size;
+$info__table_clr_text: $clr__grey_pale;

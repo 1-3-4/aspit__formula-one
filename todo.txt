@@ -3,4 +3,8 @@ x Fiks .figure__image, så det ikke bliver 'stretchet'.
 * Omdøb variabel navne, så de passer til klasse navne.
 * Omdøb filer, så de følger BEM.
 * Find ud af om der er muligt at style således, at store tal automatisk bliver gjort læsevenlige ved indsættelse af punktumer. Hvis ja, implementer i table.
+* Adskild mockup i 'need-to-have' og 'nice-to-have' dele. HTML skal indeholde 'need-to-have', alt det content der er nødvendigt for at bruge hjemmesiden. CSS skal indeholde 'nice-to-have' elementer der ikke er nødvendige for at forstå siden, men som pynter på indholdet.
 * Fiks problemmet med responsive design (mobile).
+
+JS
+* Brug javascript til at indsætte nummering i det ol-tag der viser top drivers. Tjek om CSS er loadet korrekt, hvis ikke skal javascript ikke tilføje et ekstra tal, da det vil kopiere det tal der vises af user agent stylesheet.

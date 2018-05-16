@@ -4,17 +4,17 @@
 }
 .list-item__border_clr_team-mercedes {
     @extend %list-item__border;
-    border-right-color: $list__item-border_clr_team-mercedes;
+    border-right-color: $list-item__border_clr_team-mercedes;
 }
 .list-item__border_clr_team-ferrari {
     @extend %list-item__border;
-    border-right-color: $list__item-border_clr_team-ferrari;
+    border-right-color: $list-item__border_clr_team-ferrari;
 }
 .list-item__border_clr_team-williams {
     @extend %list-item__border;
-    border-right-color: $list__item-border_clr_team-williams;
+    border-right-color: $list-item__border_clr_team-williams;
 }
 .list-item__border_clr_team-red-bull {
     @extend %list-item__border;
-    border-right-color: $list__item-border_clr_team-red-bull;
+    border-right-color: $list-item__border_clr_team-red-bull;
 }

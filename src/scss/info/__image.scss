@@ -1,0 +1,7 @@
+.info__image {
+    @extend %reset;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 $info__image_size_padding;
+    background-color: $info__image_clr_bg;
+}

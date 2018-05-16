@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- dir attributen ser lidt interassant ud, hvordan kan det være at du bruger den i det her tilfælde? -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -22,9 +23,14 @@
     </header> -->
     <main class="main">
         <div class="main__grid">
-            <article class="summary">
-                <h3 class="summary__heading">Top Drivers</h3>
-                <ol class="summary__list_is-invisible">
+            <section class="summary">
+                <h3 class="summary__heading">Summary heading</h3>
+
+                <!--
+                God måde at bruge en liste på. Lærte at det ville give mere mening at bruge en liste i det er tilfælde.
+                Men siden det er en sorteret liste, ville det måske give mere mening med en ordered list.
+                 -->
+                <ul class="summary__list_is-invisible">
                     <li class="list-item_is-invisible
                                list-item__border_clr_team-mercedes">
                         <a class="list-item__link_is-invisible" href="#">
@@ -57,11 +63,11 @@
                             <h5 class="list-item__subheading">Ferrari</h5>
                         </a>
                     </li>
-                </ol>
-            </article>
-            <article class="summary">
+                </ul>
+            </section>
+            <section class="summary">
                 <h3 class="summary__heading">top teams</h3>
-                <ol class="summary__list_is-invisible">
+                <ul class="summary__list_is-invisible">
                     <li class="list-item_is-invisible
                                list-item__border_clr_team-mercedes">
                         <a class="list-item__link_is-invisible" href="#">
@@ -94,38 +100,55 @@
                             <h4 class="list-item__subheading">Switzerland</h4>
                         </a>
                     </li>
-                </ol>
-            </article>
-            <article class="summary">
+                </ul>
+            </section>
+            <section class="summary">
                 <h3 class="summary__heading">Upcoming track</h3>
-                <figure class="info">
-                    <img class="info__image" src="img/track__silverstone_britain.png" alt="Depiction of the silverstone track, colored in great britain's flag.">
-                    <figcaption class="info__caption">Silverstone - Great britain</figcaption>
+                <article class="info">
+                    <!--
+                    Fedt at du bruger HTML5 figure, og at du bruger alt text på img.
+                    Måske istedet for at have en klasse på figure tagget, så kunne du vælge at bruge en selector som vælger figure tags som har en parent med klasse "info".
+                    Det samme kunne du måske gøre ved img i figure tagget og figcaption, f.eks. en selector som vælger img tags som har et figure tag(som har en parent med klasse "info") som parent. -->
+                    <figure class="info__figure">
+                        <img class="figure__image" src="img/track__silverstone_britain.png" alt="Depiction of the silverstone track, colored in great britain's flag.">
+                        <figcaption class="figure__caption">Silverstone - Great britain</figcaption>
+                    </figure>
                     <table class="info__table">
-                        <tr class="info__row">
-                            <td class="info__cell">Number of times held:</td>
-                            <td class="info__cell">69</td>
+                        <!--
+                        En fantastisk måde at bruge en tabel.
+                        Det virker dog lidt overflødig med klasserne "table__row" og "table__cell".
+                        Man kunne have en selector som vælger alle tr med en parent der har klasse "info__table" og så alle td inde i de valgte tr.
+                        -->
+                        <tr class="table__row">
+                            <td class="table__cell">Number of times held:</td>
+                            <td class="table__cell">69</td>
                         </tr>
-                        <tr class="info__row">
-                            <td class="info__cell">First held:</td>
-                            <td class="info__cell">1926</td>
+                        <tr class="table__row">
+                            <td class="table__cell">First held:</td>
+                            <td class="table__cell">1926</td>
                         </tr>
-                        <tr class="info__row">
-                            <td class="info__cell">Circuit length:</td>
-                            <td class="info__cell">5891 km</td>
+                        <tr class="table__row">
+                            <td class="table__cell">Circuit length:</td>
+                            <td class="table__cell">5891 km</td>
                         </tr>
-                        <tr class="info__row">
-                            <td class="info__cell">Race length:</td>
-                            <td class="info__cell">306291 km</td>
+                        <tr class="table__row">
+                            <td class="table__cell">Race length:</td>
+                            <td class="table__cell">306291 km</td>
                         </tr>
-                        <tr class="info__row">
-                            <td class="info__cell">Laps:</td>
-                            <td class="info__cell">52</td>
+                        <tr class="table__row">
+                            <td class="table__cell">Laps:</td>
+                            <td class="table__cell">52</td>
                         </tr>
                     </table>
-                </figure>
-            </article>
+                </article>
+            </section>
         </div>
     </main>
   </body>
 </html>
+
+<!--
+Overall:
+Overvej at bruge færre klasser og måske nogle steder, tænke lidt over om en klasse ville give mere mening end at bruge en selector.
+For mange klasser fylder visuelt som kan gøre det svært at overskue, og det fylder også mere i kilobyte.
+-->
